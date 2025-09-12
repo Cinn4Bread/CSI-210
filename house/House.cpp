@@ -7,12 +7,10 @@ House::House()
 {
 	private:
 	Room rooms[MAX_TOTAL_ROOMS];
-	
 	int numBedrooms;
 	int numBathrooms;
 	int numKitchens;
 	int numLivingRooms;
-
 	int roomIndex = 0;
 }
 
