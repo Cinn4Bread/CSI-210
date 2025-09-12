@@ -37,25 +37,16 @@ int House::getCurrentRoomCount(Room theRoom)
 	switch (type)
 	{
 		case BEDROOM:
-		getNumBedrooms();
-		break;
-
+			return getNumBedrooms();
 		case BATHROOM:
-		return getNumBathrooms();
-		break;
-
+			return getNumBathrooms();
 		case KITCHEN:
-		return getNumKitchens(); //codes
-		break;
-
+			return getNumKitchens();
 		case LIVINGROOM:
-		return getNumLivingrooms();
-		break;
-	
+			return getNumLivingrooms();
 		default:
-		cout << "No such room type."
-		return 0;
-		break;
+			cout << "No such room type." << endl;
+			return 0;
 	}
 }
 
