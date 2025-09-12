@@ -1,0 +1,12 @@
+﻿  test.cpp
+C:\Users\ianha\source\repos\CSI-240\PizzaClass\test.cpp(159,1): warning C4715: 'Pizza::basePrice': not all control paths return a value
+test.obj : error LNK2005: "public: __cdecl Pizza::Pizza(char)" (??0Pizza@@QEAA@D@Z) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: "public: void __cdecl Pizza::addTopping(class Topping const &)" (?addTopping@Pizza@@QEAAXAEBVTopping@@@Z) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: "private: double __cdecl Pizza::basePrice(void)const " (?basePrice@Pizza@@AEBANXZ) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: "public: double __cdecl Pizza::getPrice(void)" (?getPrice@Pizza@@QEAANXZ) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: "public: char __cdecl Pizza::getSize(void)const " (?getSize@Pizza@@QEBADXZ) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: "public: void __cdecl Pizza::printPizzaInfo(void)" (?printPizzaInfo@Pizza@@QEAAXXZ) already defined in pizzaFunctions.obj
+test.obj : error LNK2005: main already defined in main.obj
+toppingFunctions.obj : error LNK2005: "public: __cdecl Topping::Topping(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)" (??0Topping@@QEAA@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@N@Z) already defined in test.obj
+toppingFunctions.obj : error LNK2005: "public: __cdecl Topping::Topping(void)" (??0Topping@@QEAA@XZ) already defined in test.obj
+C:\Users\ianha\source\repos\CSI-240\PizzaClass\x64\Debug\PizzaClass.exe : fatal error LNK1169: one or more multiply defined symbols found
