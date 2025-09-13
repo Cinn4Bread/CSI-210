@@ -45,5 +45,10 @@ public:
 
 	string getDescription();
 private:
-	//add data here!!!
+	Room rooms[MAX_TOTAL_ROOMS];
+	int numBedrooms;
+	int numBathrooms;
+	int numKitchens;
+	int numLivingRooms;
+	int roomIndex;
 };

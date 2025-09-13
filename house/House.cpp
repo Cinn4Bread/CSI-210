@@ -7,12 +7,9 @@ House::House()
 {
 	private:
 	Room rooms[MAX_TOTAL_ROOMS];
-	
-	int numBedrooms;
-	int numBathrooms;
-	int numKitchens;
-	int numLivingRooms;
-
+	int numBedrooms = 0;
+	int numBathrooms = 0;
+	int numLivingRooms = 0;
 	int roomIndex = 0;
 }
 
@@ -52,38 +49,82 @@ int House::getCurrentRoomCount(Room theRoom)
 
 int House::getNumBedrooms()
 {
-	//stub
-	return 0;
+	int value = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		if(rooms[i].getType() == BEDROOM)
+		{
+			value++;
+		}
+	}
+	return value;
 }
 
 int House::getNumBathrooms()
 {
-	//stub
-	return 0;
+	int value = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		if(rooms[i].getType() == BATHROOM)
+		{
+			value++;
+		}
+	}
+	return value;
 }
 
 int House::getNumKitchens()
 {
-	//stub
-	return 0;
+	int value = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		if(rooms[i].getType() == KITCHEN)
+		{
+			value++;
+		}
+	}
+	return value;
 }
 
 int House::getNumLivingrooms()
 {
-	//stub
-	return 0;
+	int value = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		if(rooms[i].getType() == LIVINGROOM)
+		{
+			value++;
+		}
+	}
+	return value;
 }
 
 int House::getTotalSquareFootage()
 {
-	//stub
-	return 0;
+	int totalSQ = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		totalSQ += rooms[i].getSquareFootage();
+	}
+
+	return totalSQ;
 }
 
 int House::getTotalVolume()
 {
-	//stub
-	return 0;
+	int totalVolume = 0;
+
+	for(int i = 0; i < roomIndex; i++)
+	{
+		totalVolume += rooms[i].getVolume();
+	}
+
+	return totalVolume;
 }
 
 bool House::isValid()
