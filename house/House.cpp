@@ -5,7 +5,6 @@ using namespace std;
 
 House::House()
 {
-	private:
 	Room rooms[MAX_TOTAL_ROOMS];
 	int numBedrooms = 0;
 	int numBathrooms = 0;
@@ -20,7 +19,7 @@ bool House::addRoom( const Room& theRoom )
 	{
 		return false;
 	}
-	else if(theRoom.getHeight < MIN_HEIGHT || theRoom.getSquareFootage() < MIN_AREA)
+	else if(theRoom.getHeight() < MIN_HEIGHT || theRoom.getSquareFootage() < MIN_AREA)
 	{
 		return false;
 	}

@@ -1,11 +1,4 @@
 {
-    "files.exclude": 
-    {
-        "**/start.exe": true,
-        "**/node_modules": true,
-        "**/.git": true
-    },
-
     "files.associations": {
         "string": "cpp",
         "format": "cpp",
@@ -65,5 +58,5 @@
         "typeinfo": "cpp",
         "variant": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "enabled"
 }

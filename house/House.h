@@ -2,6 +2,7 @@
 
 #include <string>
 #include "Room.h"
+#include <iostream>
 
 //a house can never have more than these number of roooms of each type
 const int MAX_BEDROOMS = 4;
